@@ -1,0 +1,36 @@
+{
+  "chains": [
+    {
+      "name": "WAGMI (placeholder TNX)",
+      "type": "ethereum",
+      "id": "0",
+      "endpoint": "https://subnets.avax.network/wagmi/wagmi-chain-testnet/rpc",
+      "from": "0x06b739fe24d9E54A2e656E8664d358a6De7A24b3",
+      "opts": {
+        "bridge": "0xC9040C0Ec35102f94473f46D3C03044F9d014475",
+        "erc20Handler": "0xC111B240797a7110315DCEBaD78FC52461BaabB0",
+        "genericHandler": "0xC111B240797a7110315DCEBaD78FC52461BaabB0",
+        "gasLimit": "1000000",
+        "maxGasPrice": "50000000000",
+        "http": "true",
+        "blockConfirmations":"0"
+      }
+    },
+    {
+      "name": "Fuji",
+      "type": "ethereum",
+      "id": "1",
+      "endpoint": "https://api.avax-test.network/ext/bc/C/rpc",
+      "from": "0x06b739fe24d9E54A2e656E8664d358a6De7A24b3",
+      "opts": {
+        "bridge": "0x5FAA5B56b5e5B9c257A639dFb5Ae7dBA559d905b",
+        "erc20Handler": "0x1dba0f44B1188E957B2e1a576498dEb7Ff6208E6",
+        "genericHandler": "0x1dba0f44B1188E957B2e1a576498dEb7Ff6208E6",
+        "gasLimit": "1000000",
+        "maxGasPrice": "50000000000",
+        "http": "true",
+        "blockConfirmations":"0"
+      }
+    }
+  ]
+}

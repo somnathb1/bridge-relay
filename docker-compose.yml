@@ -4,13 +4,15 @@
 version: '3'
 services:
   bridge:
+    platform: linux/x86_64
     build:
       context: .
     container_name: bridge
     environment:
-      - KEYSTORE_PASSWORD=password
-    command: --config /config/config.json
+      - KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
+    command: --config /bridgeConfig/config.json --verbosity trace --blockstore /blockstore
     volumes:
-      - ./config:/config
+      - ./bridgeConfig:/bridgeConfig
       - ./keys:/keys/
+      - ./blockstore:/blockstore
     network_mode: host

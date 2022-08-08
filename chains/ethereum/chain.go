@@ -4,7 +4,7 @@
 The ethereum package contains the logic for interacting with ethereum chains.
 
 There are 3 major components: the connection, the listener, and the writer.
-The currently supported transfer types are Fungible (ERC20), Non-Fungible (ERC721), and generic.
+They currently supported transfer types are Fungible (ERC20), Non-Fungible (ERC721), and generic.
 
 Connection
 
